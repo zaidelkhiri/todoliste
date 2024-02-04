@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 120px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #3748df;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(126, 84, 255);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    word-break: break-word; /* Allow long words to break and wrap onto the next line */
+}
+
+td a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+td a.delete {
+    background-color: #e74c3c;
+}
+
+td a.update {
+    background-color: #3498db;
+}
+
+h1.error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Reset some default styles */
+
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="search"] {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+
+input[type="submit"] {
+    background-color: rgb(126, 84, 255);
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(102, 63, 218);
+}

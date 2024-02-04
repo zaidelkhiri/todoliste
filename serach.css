@@ -1,0 +1,36 @@
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 150px;
+  margin-left: 120px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color:rgb(126, 84, 255);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+td {
+  word-break: break-word; /* Allow long words to break and wrap onto the next line */
+}
+
+td[colspan="3"] {
+  text-align: center;
+  padding: 10px;
+  color: #999;
+}
+

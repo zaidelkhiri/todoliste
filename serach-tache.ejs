@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/serach.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Serach-Task</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#"><strong>Tick Tack</strong> </a></div>
+            <div class="nav-links">
+
+                <div class="sidebar-logo">
+                    <span class="logo-name"><strong>Tick Tack</strong></span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="/">Home</a></li>
+                    <li> <a href="/add">Add tache</a></li>
+                    <li> <a href="/tache">Task list</a></li>
+                    <li><a href="/serach-tache">Serach-Task</a></li>
+                    <li><a href="/login">Login</a></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+    
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>taskName</th>
+            <th>description</th>
+        </tr>
+        <% if (tache && tache.length > 0) { %>
+            <% for (var i = 0; i < tache.length; i++) { %>
+                <tr>
+                    <td><%- tache[i].id %></td>
+                    <td><%- tache[i].taskName %></td>
+                    <td><%- tache[i].description %></td>
+                </tr>
+            <% } %>
+        <% } else { %>
+            <tr>
+                <td colspan="3">No Tache data found.</td>
+            </tr>
+        <% } %>
+    </table>
+
+
+
+   
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Tick<span>Task</span></h3>
+
+            <p class="footer-links">
+                
+                <a href="/">Home</a>
+                |
+                <a href="/tache">Liste de tache</a>
+                |
+                <a href="/serach-tache">Serach-Task </a>
+                |
+                <a href="/login">Login</a>
+                
+            </p>
+
+            <p class="footer-company-name">Copyright © 2024 <strong></strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Tunis</span>
+                    Tozeur</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+216 21046239
+                <p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">belkhirizaid36@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>One app to replace them all</span>
+                <strong>All of your work in one place:</strong> Tasks, Docs, Goals, & more.
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
